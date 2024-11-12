@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Detalhes do Produto - iGenius Store</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">iGenius Store</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="carrinho.html" class="cart-button">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Detalhes do Produto -->
+    <section class="product-details container">
+        <div class="product-gallery">
+            <div class="product-image-container">
+                <img id="product-image" src="" alt="Produto" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="img/iphone13.png" alt="Thumbnail 1" class="thumbnail" onclick="changeImage('img/iphone13.png')">
+                    <img src="img/iphone12.png" alt="Thumbnail 2" class="thumbnail" onclick="changeImage('img/iphone12.png')">
+                    <img src="img/iphone11.png" alt="Thumbnail 3" class="thumbnail" onclick="changeImage('img/iphone11.png')">
+                    <img src="img/iphonese.png" alt="Thumbnail 4" class="thumbnail" onclick="changeImage('img/iphonese.png')">
+                    <img src="img/iphone14.png" alt="Thumbnail 5" class="thumbnail" onclick="changeImage('img/iphone14.png')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 id="product-name" class="product-title"></h1>
+                <p id="product-price" class="price"></p>
+                <p id="product-details" class="details"></p>
+                <button id="add-to-cart" class="btn">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especificações do Produto -->
+    <section class="specifications container">
+        <h3>Especificações</h3>
+        <ul id="product-specifications">
+            <!-- Specifications will be populated here -->
+        </ul>
+    </section>
+
+    <!-- Avaliações dos Clientes -->
+    <section class="reviews container">
+        <h3>Avaliações dos Clientes</h3>
+        <div id="customer-reviews">
+            <!-- Customer reviews will be populated here -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 iGenius Store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="product.js"></script>
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById("product-image").src = imageSrc;
+        }
+    </script>
+</body>
+</html>
